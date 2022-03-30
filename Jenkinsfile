@@ -7,11 +7,11 @@ pipeline {
     
     stages {
         // 1. Checkout the code from GIT
-        stage('Checkout') {
-            steps {
-                git branch: 'develop', url: 'https://github.com/akmaharshi/petclinic.git'
-            }
-        }
+//         stage('Checkout') {
+//             steps {
+//                 git branch: 'develop', url: 'https://github.com/akmaharshi/petclinic.git'
+//             }
+//         }
         
         // 2. Run Maven build
         stage('Build') {
