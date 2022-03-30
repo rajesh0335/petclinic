@@ -61,17 +61,17 @@ pipeline {
                     steps {
                         nexusArtifactUploader artifacts: [
                             [artifactId: 'spring-petclinic', 
-                                classifier: '', 
-                                file: 'target/petclinic.war', 
-                                type: 'war']
+                             classifier: '', 
+                             file: 'target/petclinic.war', 
+                             type: 'war']
                             ], 
                             credentialsId: 'nexusCred', 
                             groupId: 'org.springframework.samples', 
                             nexusUrl: '3.145.39.41:8081', 
                             nexusVersion: 'nexus3', 
                             protocol: 'http', 
-                            repository: 'maven-snapshots', 
-                            version: '4.2.6-SNAPSHOT'
+                            repository: 'maven-releases', 
+                            version: '4.2.0'
                     }
                 }
             }
