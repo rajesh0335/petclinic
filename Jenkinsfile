@@ -52,7 +52,7 @@ pipeline {
                 // 4. Publish Jnuit test results
                 stage('Unit tests') {
                     steps {
-                        junit 'target/urefire-reports/*.xml' 
+                        junit 'target/surefire-reports/*.xml' 
                     }
                 }
                 
